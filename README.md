@@ -54,6 +54,6 @@ wireframe-website
 - Basic styling with CSS.
 - JavaScript for interactivity.
 
-## License
+## Notes
 
-This project is licensed under the MIT License.
+Created by Valenzuela, John Oliver with AI and a reference design to Science Education Institute of DOST
