@@ -1,0 +1,217 @@
+/* Basic reset */
+:root{
+  --bg1: #0b1230;
+  --bg2: #2736b0;
+  --accent: #e84d3d;
+  --muted: #cfcfe1;
+  --card-bg: rgba(255,255,255,0.03);
+  --container: 1180px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: linear-gradient(to bottom, var(--bg1) 0%, #1a237e 40%, var(--bg2) 100%);
+  background-attachment: fixed;
+  color:#fff; 
+  -webkit-font-smoothing:antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main{
+  flex: 1;
+}
+/* container */
+
+/* Header */
+.site-header {
+  background-color: rgba(238, 238, 238, 0.19);
+  border-bottom: none;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-top: -60px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: white;
+}
+
+.navbar-brand {
+  font-size: 2 rem;
+}
+
+.nav-item{
+  padding: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* underline hover animation */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent); /* your red highlight */
+  transition: width 0.3s ease;
+}
+
+/* on hover */
+.navbar-nav .nav-link:hover {
+  color: var(--accent);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* keep the active link styled */
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+  background-color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: -10px;
+}
+.COR-seal {
+  display: block;
+  margin: 0 auto;
+  max-height: 200px;
+}
+
+.GISbg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: auto;
+  opacity: 0.4; /* Adjust opacity for subtlety */
+  z-index: -1; /* Ensure it stays in the background */
+}
+
+/*main section*/
+
+main h3 {
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* Carousel styling */
+.project-carousel img,
+.news-carousel img {
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 20 / 8;
+  content: center;
+}
+
+.project-carousel .carousel-control-prev-icon,
+.project-carousel .carousel-control-next-icon,
+.news-carousel .carousel-control-prev-icon,
+.news-carousel .carousel-control-next-icon {
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+/* Announcement Card */
+.announcement-card {
+  border-radius: 8px;
+  max-width: max-content;
+  max-height: max-content;
+}
+
+.announcement-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .project-carousel img,
+  .announcement-card img,
+  .news-carousel img {
+    height: auto;
+  }
+}
+
+/* Footer Styles */
+.site-footer{
+  background-color: rgba(238, 238, 238, 0.19);
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: -60px;
+  padding-bottom: -100px;
+  color: rgba(255,255,255,0.7);
+  border-top-left-radius: 100% 100px;
+  border-top-right-radius: 100% 100px;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 36px;
+}
+.site-footer a:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+/* Responsive */
+/* Adjust responsive breakpoint */
+@media (max-width: 1200px) { /* Changed from 1000px */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .announcement-card {
+    min-height: 400px;
+  }
+} 
+.dpwh-logo {
+  width: 500px;  /* adjust size as needed */
+  height: auto;
+  margin-top: 20px;  /* fine-tune vertical position */
+}
+
+.logo-hr{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
