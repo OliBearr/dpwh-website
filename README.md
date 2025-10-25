@@ -7,7 +7,6 @@ This project is a simple wireframe website designed to showcase the structure an
 ```
 wireframe-website
 ├── src
-│   ├── index.html        # Main entry point of the website
 │   ├── pages
 │   │   ├── home.html     # Home page structure
 │   │   ├── about.html    # About page structure
@@ -23,6 +22,7 @@ wireframe-website
 ├── public
 │   ├── robots.txt         # Instructions for web crawlers
 │   └── manifest.json       # Metadata for the web application
+├── index.html        # Main entry point of the website
 ├── package.json            # npm configuration file
 ├── .gitignore              # Files to ignore in version control
 └── README.md               # Project documentation
