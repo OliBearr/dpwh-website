@@ -215,3 +215,39 @@ main h3 {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
+/* Contact Form Styling */
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(232, 77, 61, 0.25);
+}
+
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(232, 77, 61, 0.25);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: #d43c2c;
+  border-color: #d43c2c;
+}
+
+/* Card styling for contact page */
+.card {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Form validation styling */
+.was-validated .form-control:valid {
+  border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
